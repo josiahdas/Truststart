@@ -1,5 +1,3 @@
-Here's a short intro you can drop at the top of the TrustStart README, above the "run it locally" instructions:
-
 TrustStart
 
 TrustStart is an AI-assisted security review tool for industrial remote-start requests. It evaluates each request against real safety and compliance criteria — target zone, local confirmation, safety-state verification, command expiration, audit logging — and returns a decision (Approve / Needs Evidence / Escalate / Block) with rationale, missing evidence, and recommended controls.
