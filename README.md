@@ -1,3 +1,12 @@
+Here's a short intro you can drop at the top of the TrustStart README, above the "run it locally" instructions:
+
+TrustStart
+
+TrustStart is an AI-assisted security review tool for industrial remote-start requests. It evaluates each request against real safety and compliance criteria — target zone, local confirmation, safety-state verification, command expiration, audit logging — and returns a decision (Approve / Needs Evidence / Escalate / Block) with rationale, missing evidence, and recommended controls.
+
+The app runs the same request through GPT-4.1 and Claude Sonnet 4.5 side by side, so you can compare how two frontier models reason about safety-critical judgment calls. Evaluated against a 20-scenario, hand-labeled benchmark, Claude Sonnet 4.5 scored 80% decision accuracy vs. 60% for GPT-4.1 — with the largest gap on Block decisions (88% vs. 38%), and 75% agreement between the two models overall.
+
+Built with Python and Streamlit, calling both models live via the OpenAI and Anthropic APIs.
 # TrustStart — run it locally
 
 This is the same code that produced `outputs/evaluation_checkpoint.json` (GPT-4.1 vs Claude Sonnet 4.5 comparison used in the report). Pulled out of the OneDrive project zip and stripped of the `.venv` folder — you'll build a fresh one below.
